@@ -1,0 +1,375 @@
+/*
+Theme Name: Rise Celestial Landing Page
+Theme URI: http://www.m3digital.herokuapp.com
+Description: Custom landing page developed by M3Digital. 
+Author: Bobby Mullins
+Author URI: http://www.m3digital.herokuapp.com
+Version: 1.0
+Tags: responsive, custom, bootstrap
+
+License: N/A
+License URI: N/A
+
+This simple theme was custom built by M3Digital using Bootstrap
+*/
+/* Full Height Carousel */
+html, body {
+    height: 100%; 
+}
+
+.carousel, .item, .active {
+    height: 100%; 
+}
+
+.carousel-inner {
+    height: 100%; 
+}
+
+.jumbotron {
+    background-image:url(../rise_celestial_official/images/rise_celestial_background_full.png); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-size: cover; 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+    margin-bottom: 0; 
+    width: 100%; 
+}
+
+.jumbotron2 {
+    background-image:url(../rise_celestial_official/images/sellas_kitchen_background_asset.jpg); 
+    height: 66vh;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    background-size: cover; 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+    margin-bottom: 0; 
+    width: 100%;
+}
+
+/**************************************/
+/*         Boston2Philly CSS          */
+/**************************************/
+
+/* Movie Title Logo */
+#movie_title_logo img {
+    width: 50%; 
+    margin: 1% 25% 0 25%; 
+}
+
+/* Buttons */
+
+.btn-group {
+    display: block; 
+/*    margin-top: 2.5%; */
+}
+
+.btn-group button {
+    background-color: transparent; 
+    border: 2px solid #fff; 
+    border-radius: 0; 
+    color: #fff; 
+}
+
+.btn-group>.btn {
+    float: none; 
+    width: 20%; 
+}
+
+#watch_now, #trailer {
+    margin: 2.5% 2.5% 0 2.5%; 
+    text-align: center; 
+    width: 25%; 
+}
+
+button#official_site.btn.btn-lg:hover {
+    background-color: black; 
+    color: #fff; 
+    transition: .6s; 
+}
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: black;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Social Icons */
+#social_icons img {
+    margin: 2.5% 2.5% 0 2.5%;  
+}
+
+#social_icons img:hover {
+    opacity: .7;
+    transition: .5s; 
+}
+
+/* Bottom Content */
+
+#dvd_case {
+    position: absolute; 
+/*    top: 25%;  */
+}
+
+#dvd_case img {
+    width: 60%;  
+    margin-top: -33%;  
+}
+
+#dvd_case .btn {
+    background-color: #fff; 
+    border: 2px solid black; 
+    border-radius: 0; 
+    color: black;
+/*    display: block; */
+    margin-top: 2%; 
+/*    margin-left: 12.5%; */
+    width: 75%; 
+}
+
+#phillymia {
+    padding-right: 0 !important; 
+}
+
+#phillymia img {
+    float: right; 
+}
+
+/* ********************************** */
+/* Sellas Kitchen Original CSS */
+/* ********************************** */
+
+/* Movie Title Logo */
+#movie_title_logo2 img {
+    width: 40%; 
+    margin: 0 30%; 
+}
+
+/* DVD Case */
+
+#dvd_case2 {
+    position: absolute; 
+/*    top: 25%;  */
+}
+
+#dvd_case2 img {
+    width: 60%;  
+    margin-top: 60%;  
+}
+
+#dvd_case2 .btn {
+    background-color: #fff; 
+    border: 2px solid black; 
+    border-radius: 0; 
+    color: black;
+    display: block; 
+/*    margin-top: 2.5%; */
+    margin: 2.5% 16.5% 0 16.5%; 
+    width: 66%; 
+}
+
+/* Coming Soon */
+#coming_soon {
+    width: 75%; 
+    margin: 60% 12.5% 0 12.5%; 
+}
+
+#social_icons img:hover {
+    opacity: .7; 
+}
+
+/* Movie Summary */
+
+#movie_summary2 {
+    margin-top: 5%; 
+}
+
+/* Media Queries*/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    #official_site2 {
+        display: none; 
+    }
+    #jumbotron_mobile {
+        display: none; 
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   #movie_summary {
+        overflow: auto; 
+        max-height: 50vh; 
+    }
+    #movie_summary2 {
+        overflow: auto; 
+        max-height: 30vh;  
+    }
+    #official_site2 {
+        display: none; 
+    }
+    #jumbotron_mobile {
+        display: none; 
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    #movie_summary {
+        overflow: auto; 
+        max-height: 50vh; 
+    }
+    #dvd_case .btn {
+        width: auto;  
+    }
+    #movie_summary2 {
+        overflow: auto; 
+        max-height: 30vh;  
+    }
+    #dvd_case2 img, #coming_soon {
+        margin-top: 90%; 
+    }
+    #official_site2 {
+        display: none; 
+    }
+    #jumbotron_mobile {
+        display: none; 
+    }
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    #dvd_case img, #dvd_case2 img {
+        display: none; 
+    }
+    #dvd_case .btn {
+        display: none; 
+    }
+    #phillymia {
+        display: none; 
+    }
+    #coming_soon {
+        display: none; 
+    }
+    #jumbotron_mobile {
+        display: none; 
+    }
+    #movie_title_logo {
+        margin-bottom: 2.5%; 
+    }
+    #movie_summary {
+        margin-top: 3.5%; 
+    }
+    #official_site2 {
+        margin: 2.5% 2.5% 0 2.5%;
+    }
+    .btn-group {
+        margin-bottom: 2.5%; 
+    }
+    #dvd_case2 .btn {
+        background-color: transparent; 
+        border: 2px solid #fff; 
+        border-radius: 0; 
+        color: #fff; 
+        width: auto; 
+        margin-top: 60%; 
+    }
+    #social_icons2{
+        margin-top: 70%; 
+    }
+    #movie_summary {
+        overflow: auto; 
+        max-height: 44vh;  
+    }
+    #movie_summary2 {
+        overflow: auto; 
+        max-height: 30vh;  
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    #dvd_case img, #dvd_case2 img {
+        display: none; 
+    }
+    #dvd_case .btn {
+        display: none; 
+    }
+    #phillymia {
+        display: none; 
+    }
+    #coming_soon {
+        display: none; 
+    }
+    .jumbotron2 {
+        background-image: url(../rise_celestial_official/images/sellas_kitchen_background_asset_mobile.jpg); 
+        height: 50vh; 
+    }   
+    #jumbotron_mobile .btn {
+        background-color: transparent; 
+        border: 2px solid #fff; 
+        border-radius: 0; 
+        color: #fff; 
+        margin-top: 20%; 
+        margin-bottom: 5%; 
+        width: auto;     
+    }
+    #official_site2 {
+        margin: 2.5% 2.5% 0 2.5%;
+    }
+    .btn-group {
+        margin-bottom: 2.5%; 
+    }
+    #social_icons2 {
+        display: none; 
+    }
+    #watch_now, #trailer {
+        width: auto; 
+    }
+    #dvd_case2 .btn {
+        display: none; 
+    }
+}
